@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Page</title>
+    <style>
+        /* CSS to make the image fit properly within the webpage */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Optional background color for the page */
+        }
+
+        /* Styling for the image */
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        /* Styling for the button */
+        #startButton {
+            padding: 10px 20px;
+            background-color: #00ff22;
+            color: #030303;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Displaying an image that fits properly within the webpage -->
+    <img src="P2E.jpg" alt="Your Image Description">
+
+    <!-- Adding a button to open a new webpage in the same page -->
+    <button id="startButton" onclick="openNewPage()">Start</button>
+
+    <script>
+        // JavaScript function to open a new webpage in the same page
+        function openNewPage() {
+            // Change the URL below to the URL of the new webpage you want to open
+            window.location.href = "https://skills.myp2e.org/";
+        }
+    </script>
+</body>
+</html>
